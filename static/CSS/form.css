@@ -14,7 +14,7 @@ border:1px;
 background-color:white;
 margin-left:10%;
 }
-div.form1 input[type=text], div.form1 input[type=number], div.form1 select{
+div.form1 input[type=text], div.form1 input[type=number], div.form1 select, #name{
 width:100%;
 position: relative;
 border:none;

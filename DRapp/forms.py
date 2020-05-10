@@ -4,7 +4,7 @@ from DRapp.models import Patient
 
 
 class PersonalDetails(forms.Form):
-    pname = CharField(label='Enter patient\'s name', max_length=30, required=True)
+    pname = CharField(label='Enter patient\'s name', max_length=30, required=True, widget=TextInput(attrs={'id': 'name'}))
     page = IntegerField(label='Enter patient\'s age', max_value=100,min_value=10, required=True, widget=NumberInput(attrs={'id': 'patient_age'}))
     address = CharField(label='Enter patient\'s address', max_length=100, required=True)
     pno = IntegerField(label='Enter patient\'s phone Number', max_value=9999999999, min_value=1000000000, required=True,widget=TextInput(attrs={'id':'phone'}))
