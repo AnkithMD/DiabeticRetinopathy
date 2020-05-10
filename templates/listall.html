@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block header %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/listall.css' %}">
+{% endblock header %}
+{% block body %}
+<table class="but">
+    <tr><td><a href="/list/c"><button>Completed</button></a></td><td><a href="/list/p"><button>Pending</button></a></td></tr>
+</table>
+{% if all|length > 0 %}
+    <table class="lis" border="1">
+        <tr><th>NAME</th><th>AGE</th><th>GENDER</th><th>PH.NO</th><th>BLOOD GROUP</th><th>ACTION</th></tr>
+        {% for x in all %}
+            <tr>
+                <td>{{x.patient_name}}</td>
+                <td>{{x.patient_age}}</td>
+                <td>{{x.gender}}</td>
+                <td>{{x.phone_no}}</td>
+                <td>{{x.blood_group}}</td>
+                <td><a href="/view/{{x.patient_id}}"><button>view details</button></a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% else %}
+<p class="np">No patient records to list</p>
+{% endif %}
+{% endblock body %}

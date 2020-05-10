@@ -1,0 +1,84 @@
+table.lis {
+  margin-top: 12%;
+  *border-collapse: collapse;
+    border-spacing: 0;
+border:none;
+width:100%;
+}
+.lis th:first-of-type {
+  border-top-left-radius: 10px;
+}
+.lis th:last-of-type {
+  border-top-right-radius: 10px;
+}
+.lis tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 0px;
+}
+.lis tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 0px;
+}
+.lis th, .lis td {
+  border: 1px solid black;
+}
+.lis th, .lis td{
+padding: 5px;
+}
+
+html{
+background-color:#4d4d4d;
+}
+.lis th{
+background-color:#8080ff;
+}
+.lis tr{
+background-color:white;
+}
+.lis tr:hover {background-color: #f5f5f5;}
+button:focus { outline:0;}
+.lis button{
+background-color: #ccccff; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 3px #999;
+}
+.lis button:active{
+transform: translateY(4px);
+}
+
+p.np{
+margin-top:90px;
+position:relative;
+z-index:1;
+}
+
+table.but{
+margin-top:-50px;
+position:fixed;
+z-index:1;
+float:left;
+}
+
+.but button{
+margin-top:-0px;
+margin-bottom:30px;
+padding: 15px 25px;
+width:100%;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #1ABC9A;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+}

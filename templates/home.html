@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Home
+{% endblock title %}
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/navbar.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block header%}
+<script type="text/javascript">
+		function validate(event)
+		{
+			s_val = document.getElementById('search').value
+			console.log(s_val.length)
+			if(s_val.match(/^[0-9]+$/))
+			{
+				if (s_val.length!=10){
+					alert("Please enter 10 number")
+					event.preventDefault()
+				}
+			}
+			else if (s_val.match(/^[0-9a-zA-Z]+$/))
+			{
+				if(!s_val.match(/^[a-z]+$/i))
+				{
+					alert("please enter phone number or patient name. Alphanumerics not allowed")
+  					event.preventDefault()
+				}
+
+			}
+		}
+	</script>
+{% endblock header %}
+
+{% block body %}
+
+<form action="/search" method="POST" >
+	        {% csrf_token %}
+			<div class="second">
+    <input type="text" placeholder="Enter patient ID or Contact No">
+    <button type="submit"><i class="fa fa-search"></i></button></div>
+        </form>
+
+
+{% endblock body %}

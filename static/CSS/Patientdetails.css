@@ -1,0 +1,190 @@
+
+body{
+margin-top:7%;
+Margin-left:25%;
+background-color:white;
+width:50%;
+border: 1px solid #cc5200;
+border-radius: 5px;
+height:550px;
+}
+
+.al tr{
+margin-left:50px;
+}
+
+
+.al th{
+text-align:left;
+}
+
+.al td{
+text-align:left;
+margin-top:40px;
+}
+html{
+background-color:#2E4053;
+}
+
+div.al{
+overflow-x:scroll;
+white-space: nowrap;
+position:relative;
+}
+div.al div{
+overflow-x:hidden;
+overflow-y: hidden;
+display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+div.al::-webkit-scrollbar{
+display:none;
+}
+
+div.al{
+-ms-overflow-style: none;
+}
+.al table{
+width:80%;
+margin-left: 10%;
+}
+.al table center{
+text-align:left;
+margin-left:20%;
+margin-right:auto;
+font-size:20px;
+border:1px solid black;
+}
+
+.al h2{
+text-align:center;
+color:grey;
+}
+
+.ppd{
+margin-left:10%;
+margin-right:10%;
+margin-top:5%; 
+margin-bottom:10%;
+width:80%;
+background-color:#f1f1f1;
+border: none;
+border-radius: 5px;
+ box-shadow:5px 5px 50px 5px black;
+ height:350px;
+}
+
+.dh{
+margin-left:10%;
+margin-right:10%;
+margin-top:5%; 
+margin-bottom:10%;
+background-color:white;
+width:80%;
+height:350px;
+border: none;
+border-radius: 5px;
+ box-shadow:5px 5px 30px 5px black;
+}
+
+.drd{
+margin-left:10%;
+margin-right:10%;
+margin-top:5%; 
+margin-bottom:10%;
+width:80%;
+height:350px;
+border: none;
+background-color:white;
+border-radius: 5px;
+ box-shadow:5px 5px 30px 5px black;
+}
+.pop{
+float:left;
+width:100%;
+
+}
+
+.pop button{
+font-weight:bold;
+position:fixed;
+padding: 15px 25px;
+z-index:1;
+width:10%;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+}
+.pop button:hover{
+background-color:#0d0d0d;
+}
+.pop button:active{
+transform:translateY(4px);
+}
+
+.center{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.ppd:hover, .dh:hover, .drd:hover{
+transform: scale(1.05);
+}
+.ari{
+margin-top:25%;
+height:70px;
+font-size: 20px;
+
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 3px #999;
+}
+.ari:hover{
+background-color:#0d0d0d;
+}
+.delete{
+margin-left:80px;
+}
+.edit{
+margin-left:30px;
+}
+
+.vdr{
+font-size:12px;
+text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 3px #999;
+}
+.ad{
+margin-top:20%;
+}
+.add:link{
+text-decoration:none;
+}
+
+.add{
+font-size:80px;
+font-weight:bold;
+color:black;
+}

@@ -1,0 +1,69 @@
+body{
+Margin-top:120px;
+Margin-left:30%;
+background-color:white;
+width:40%;
+height:950px;
+border: 1px solid #D68910;
+border-radius: 5px;
+box-shadow:1px 5px 30px 5px black;
+}
+
+div.form1{
+border:1px;
+background-color:white;
+margin-left:10%;
+}
+div.form1 input[type=text], div.form1 input[type=number], div.form1 select{
+width:100%;
+position: relative;
+border:none;
+background-color:white;
+border-bottom:2px solid #2E4053;
+margin-left:-86%;
+margin-top:20%;
+outline:none;
+}
+
+.tit{
+margin-top:5%;
+padding:10px;
+height:30px;
+background-color:#D68910;
+text-align: center;
+color:#2E4053;
+font-size:20px;
+font-weight:bold;
+font-family:"Times New Roman", Times, serif;
+}
+
+html{
+background-color:#2E4053;
+}
+
+div.form1 label{
+color:#2E4053;
+float:left;
+
+}
+
+div.form1 input[type=submit]{
+  margin-top:5%;
+  margin-left:1%;
+  width:25%;
+  font-size: 20px;
+  font-weight:bold;
+  font-family:"Times New Roman", Times, serif;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #2E4053;
+  background-color: #D68910;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+}
+
+div.form1 input[type=submit]:active{
+transform:translateY(3px);
+}
