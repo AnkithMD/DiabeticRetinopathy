@@ -41,39 +41,6 @@ div.first * {
 header div{
     margin: 20px;
 }
-div.second{
-    position:fixed;
-    float:left;
-    height:15px;
-    margin-left:74%;
-    margin-top:69px;
-    outline:none;
-    width:30%;
-    z-index:1;
-}
-div.second input[type=text]{
-  padding: 10px;
-  font-size: 15px;
-  border: 1px solid grey;
-  float: left;
-  width: 70%;
-  background: #f1f1f1;
-  margin-top:3px;
-}
-div.second button {
-  float:left;
-  width: 10%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 15px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-  position:relative;
-  margin-top:-39px;
-  margin-left:75.5%;
-}
 
 html{
 overflow-y:scroll;

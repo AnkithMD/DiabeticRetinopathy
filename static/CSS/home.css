@@ -1,0 +1,55 @@
+.bod{
+margin-top:5%;
+Margin-left:10%;
+background-color:white;
+width:80%;
+Height:900px;
+border: 1px solid black;
+border-radius: 5px;
+position:relative;
+}
+body{
+margin-top:5%;
+border:1px solid white;
+}
+.slides{
+margin-left:-.5%;
+width:100%;
+height:100%;
+position:fixed;
+z-index:0;
+}
+
+div.second{
+    position:fixed;
+    height:15px;
+    margin-left:74%;
+    margin-top:42px;
+    outline:none;
+    width:30%;
+    z-index:1;
+}
+div.second input[type=text]{
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+  margin-top:-30px;
+  z-index:1
+}
+div.second button {
+  float:left;
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  position:relative;
+  margin-top:-30px;
+
+}

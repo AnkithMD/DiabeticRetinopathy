@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 
-{% block title %}
-	Home
-{% endblock title %}
 {% load static %}
+
+{% block header%}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/navbar.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-{% block header%}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/home.css' %}">
 <script type="text/javascript">
 		function validate(event)
 		{
@@ -30,17 +29,35 @@
 
 			}
 		}
-	</script>
+		var i=0;
+		var images = [];
+		var time=3000;
+
+		images[0]= '/static/images/blue.jpeg';
+		images[1]= '/static/images/books.jpeg';
+
+		function changeImg()
+	{
+		document.slide.src = images[i];
+
+		if(i < images.length-1)
+		{
+		    i++;
+		} else
+		{
+		    i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+		window.onload = changeImg;
+</script>
 {% endblock header %}
-
 {% block body %}
+<img name="slide" class="slides">
 
-<form action="/search" method="POST" >
-	        {% csrf_token %}
-			<div class="second">
+<div class="second">
     <input type="text" placeholder="Enter patient ID or Contact No">
     <button type="submit"><i class="fa fa-search"></i></button></div>
-        </form>
-
-
+<div class="bod"></div>
 {% endblock body %}
