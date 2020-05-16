@@ -1,47 +1,46 @@
 body{
 Margin-top:120px;
 Margin-left:25%;
-background-color: #36578f;
-background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+background-color: #eae8ed;
+background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 width:50%;
-height:1100px;
+height:inherit;
 border: 1px solid #D68910;
 border-radius: 5px;
 box-shadow:1px 5px 30px 5px black;
 }
 
 div.form1{
-border:1px;
-background-color: #36578f;
-background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+border:1px solid grey;
+background-color: #eae8ed;
+background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 margin-left:10%;
 }
-div.form1 input[type=text], div.form1 input[type=number], div.form1 select, #name{
-width:100%;
+div.form1 input[type=text], div.form1 input[type=number], div.form1 select{
+width:150%;
 position: relative;
 border:none;
-background-color: #36578f;
-background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+color:#2E4053;
+background-color: #eae8ed;
+background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 border:1px solid #D68910;
 border-radius:5px;
 margin-left:-86%;
-margin-top:20%;
+margin-top:28%;
 outline:none;
-height:30px;
+height:50px;
 }
 
 .tit{
 margin-top:5%;
 padding:10px;
 height:30px;
-background-color: #36578f;
-background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #D68910;
 text-align: center;
-color:#D68910;
+color:black;
 font-size:20px;
 font-weight:bold;
 font-family:"Times New Roman", Times, serif;
@@ -56,12 +55,12 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
 div.form1 label{
 color:#2E4053;
 float:left;
-
 }
 
 div.form1 input[type=submit]{
   margin-top:5%;
   margin-left:1%;
+  margin-bottom:10%;
   width:25%;
   font-size: 20px;
   font-weight:bold;
@@ -78,4 +77,8 @@ div.form1 input[type=submit]{
 
 div.form1 input[type=submit]:active{
 transform:translateY(3px);
+}
+
+#patient_photo, #diab_report{
+margin:10%;
 }

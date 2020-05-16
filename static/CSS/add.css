@@ -9,8 +9,9 @@ height:350px;
 box-shadow:5px 5px 50px 5px black;
 }
 html{
-overflow-y: hidden;
-background:#2E4053;
+background-color: #00070a;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .pid{
 padding:5px;
@@ -43,7 +44,7 @@ background:#f1f1f1;
 
 .sub{
 margin-top:5%;
-margin-left:19%;
+margin-left:20%;
 font-weight:bold;
 position:fixed;
 padding: 15px 25px;

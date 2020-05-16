@@ -2,13 +2,15 @@
 body{
 margin-top:7%;
 Margin-left:25%;
-background-color: #48494f;
-background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+background-color: #050103;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 width:50%;
 border: 1px solid #cc5200;
 border-radius: 5px;
-height:550px;
+height:200%;
+box-shadow:5px 5px 50px 5px black;
+
 }
 
 .al tr{
@@ -38,7 +40,7 @@ position:relative;
 div.al div{
 overflow-x:hidden;
 overflow-y: hidden;
-display: inline-block;
+
   color: black;
   text-align: center;
   padding: 14px;
@@ -64,45 +66,50 @@ border:1px solid black;
 }
 
 .al h2{
+margin-left:-10%;
 text-align:center;
-color:grey;
+color:black;
+background:#D68910;
+width:115%;
 }
 
 .ppd{
-margin-left:10%;
+margin-left:8%;
 margin-right:10%;
 margin-top:5%; 
 margin-bottom:10%;
 width:80%;
-background-color:#f1f1f1;
+background-color:white;
 border: none;
 border-radius: 5px;
  box-shadow:5px 5px 50px 5px black;
- height:350px;
+ height:inherit;
 }
 
 .dh{
-margin-left:10%;
+margin-left:8%;
 margin-right:10%;
 margin-top:5%; 
 margin-bottom:10%;
 background-color:white;
 width:80%;
-height:350px;
+height:inherit;
 border: none;
 border-radius: 5px;
  box-shadow:5px 5px 30px 5px black;
 }
+.dh tr{
 
+margin:10px;}
 .drd{
-margin-left:10%;
+margin-left:8%;
 margin-right:10%;
 margin-top:5%; 
 margin-bottom:10%;
 width:80%;
-height:350px;
+height:inherit;
 border: none;
-background-color:white;
+background-color:#e6f2ff;
 border-radius: 5px;
  box-shadow:5px 5px 30px 5px black;
 }
@@ -114,22 +121,24 @@ width:100%;
 
 .pop button{
 font-weight:bold;
-position:fixed;
+margin-left:30%;
+margin-bottom:20px;
 padding: 15px 25px;
+width:40%;
 z-index:1;
-width:10%;
   font-size: 12px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: black;
-  background-color: #4d4d4d;
+  background-color: #D68910;
   border: none;
   border-radius: 15px;
   box-shadow: 0 3px #999;
 }
 .pop button:hover{
-background-color:#0d0d0d;
+background-color:black;
+color:#D68910;
 }
 .pop button:active{
 transform:translateY(4px);
@@ -164,9 +173,11 @@ background-color:#0d0d0d;
 }
 .delete{
 margin-left:80px;
+width:30%;
 }
 .edit{
 margin-left:30px;
+width:30%;
 }
 
 .vdr{
@@ -181,7 +192,7 @@ text-align: center;
   box-shadow: 2px 3px #999;
 }
 .ad{
-margin-top:20%;
+margin-top:10%;
 }
 .add:link{
 text-decoration:none;
@@ -191,4 +202,8 @@ text-decoration:none;
 font-size:80px;
 font-weight:bold;
 color:black;
+}
+
+img{
+margin-left:-65%;
 }

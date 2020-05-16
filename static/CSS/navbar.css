@@ -7,7 +7,9 @@ font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino,
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: #050103;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     position: fixed;
     z-index:1;
     top: 0;
@@ -18,7 +20,7 @@ header {
     display:flex;
 }
 
-.first a:link{
+.first a:link, .third a:link{
 text-decoration:none;
 }
 
@@ -50,7 +52,9 @@ color:#D68910;
 height:70px;
 font-size:17px;
 float:left;
-background: #1a1a1a;
+background-color: #050103;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 border:none;
 outline:none;
 }
@@ -80,20 +84,24 @@ ul li ul {
   width: 100%;
 }
 .second{
-width:25%;
+margin-left:-40px;
 z-index:1;
 }
 .searchBox{
-margin-top:-35px;
-float:right;
+margin-top:-75px;
 border:1px solid orange;
-height: 45px;
-border-radius: 40px;
-transform:  translate(0%,50%);
+height: 50px;
+border-radius: 50px;
+transform:  translate(0%,100%);
 z-index:1;
 background:black;
 }
 .searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+    z-index:1;
+}
+.searchBox:active > .searchInput {
     width: 240px;
     padding: 0 6px;
     z-index:1;
@@ -107,9 +115,9 @@ background:black;
     outline:none;
     color: #2f3640;
     float: right;
-    width: 55px;
-    height: 45px;
-    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background: #D68910;
     display: flex;
     justify-content: center;
@@ -124,7 +132,7 @@ background:black;
     background: none;
     outline:none;
     padding: 0;
-    color: black;
+    color: white;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
@@ -139,4 +147,28 @@ background:black;
     width: 150px;
     padding: 0 6px;
 }
+}
+.third{
+margin-top:-.02px;
+margin-left:75%;
+position:fixed;
+width:35%;
+}
+div.third * {
+    display: inline;
+}
+.third button{
+color:#D68910;
+height:70px;
+font-size:17px;
+background-color: #050103;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+border:none;
+outline:none;
+}
+
+.third button:hover{
+    background-color:#4d4d4d;
+    color:white;
 }

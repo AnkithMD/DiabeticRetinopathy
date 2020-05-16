@@ -35,15 +35,17 @@
 <div class="al">
 <div class="ppd">
 <h2>Patient Personal Details</h2>
-<table>
     {% for personal in ppd %}
+    <div><img src="{{personal.patient_photo.url}}" height="100" width="100"></div>
+<table>
+
     <tr><th>Patient_ID:</th><td>{{personal.patient_id}}</td></tr>
     <tr><th>Name:</th><td>{{personal.patient_name}}</td></tr>
     <tr><th>Age:</th><td>{{personal.patient_age}}</td></tr>
     <tr><th>Gender:</th><td>{{personal.gender}}</td></tr>
     <tr><th>PH.No</th><td>{{personal.phone_no}}</td></tr>
     <tr><th>Blood Group</th><td>{{personal.blood_group}}</td></tr>
-    <tr><th>Patient photo</th><td><img src="{{personal.patient_photo.url}}" height="100" width="100"></td></tr>
+
     <tr><th>address</th><td>{{personal.address}}</td></tr>
     {% endfor %}
 </table>
@@ -57,7 +59,7 @@
     <tr><th>Sugar Fasting Value</th><td>{{history.sugar_Fasting_value}}</td></tr>
     <tr><th>Sugar Non Fasting Value</th><td>{{history.sugar_Non_fasting_value}}</td></tr>
     <tr><th>Duration of Diabeties</th><td>{{history.time_duration}}</td></tr>
-    <tr><th>previous diabeties report</th><td><a target="_blank" href="{{history.diab_report.url}}"><button class="vdr">View Diabeties Report</button></a></td></tr>
+    <tr><th>Previous diabeties report</th><td><a target="_blank" href="{{history.diab_report.url}}"><button class="vdr">View Diabeties Report</button></a></td></tr>
     {% endfor %}
 </table>
 </div>
