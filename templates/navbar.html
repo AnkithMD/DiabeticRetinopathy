@@ -11,15 +11,25 @@
              <li><a href="/home"><button>HOME</button></a></li>
              <li><a href="/list/c"><button>ALL PATIENTS</button></a></li>
              <li><a href="/add"><button>ADD PATIENT</button></a></li>
-             <li><a href=""><button>CONTACT</button></a></li>
-             <li><a href=""><button>ABOUT</button></a></li>
-            <li><a><button>   {% if user.is_authenticated %}
+             <li><a><button>   {% if user.is_authenticated %}
                     WELCOME {{user.username}}!
                 {% else %}
                     WELCOME Guest
                 {% endif %}</button></a></li>
              <li><a href="/logout"><button>LOGOUT</button></a></li>
-         </ul></div>
+
+</ul></div>
+<div class="second">
+    <div class="searchBox">
+
+            <input class="searchInput"type="text" name="" placeholder="Enter Patient ID or Contact">
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    Search
+                </i>
+            </button>
+    </div>
+</div>
     </header>
 
 </html>

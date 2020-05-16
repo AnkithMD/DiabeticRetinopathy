@@ -1,9 +1,11 @@
 body{
 Margin-top:120px;
-Margin-left:30%;
-background-color:white;
-width:40%;
-height:950px;
+Margin-left:25%;
+background-color: #36578f;
+background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+width:50%;
+height:1100px;
 border: 1px solid #D68910;
 border-radius: 5px;
 box-shadow:1px 5px 30px 5px black;
@@ -11,34 +13,44 @@ box-shadow:1px 5px 30px 5px black;
 
 div.form1{
 border:1px;
-background-color:white;
+background-color: #36578f;
+background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 margin-left:10%;
 }
 div.form1 input[type=text], div.form1 input[type=number], div.form1 select, #name{
 width:100%;
 position: relative;
 border:none;
-background-color:white;
-border-bottom:2px solid #2E4053;
+background-color: #36578f;
+background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+border:1px solid #D68910;
+border-radius:5px;
 margin-left:-86%;
 margin-top:20%;
 outline:none;
+height:30px;
 }
 
 .tit{
 margin-top:5%;
 padding:10px;
 height:30px;
-background-color:#D68910;
+background-color: #36578f;
+background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 text-align: center;
-color:#2E4053;
+color:#D68910;
 font-size:20px;
 font-weight:bold;
 font-family:"Times New Roman", Times, serif;
 }
 
 html{
-background-color:#2E4053;
+background-color: #00070a;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 div.form1 label{

@@ -1,13 +1,13 @@
 
 p.na{
 font-size:25px;
-font-weight:bold;
 color:#D68910;
-font-family:"Times New Roman", Times, serif;
+font-weight:bold;
+font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
 }
 
 header {
-    background-color: #0d0d0d;
+    background-color: #1a1a1a;
     position: fixed;
     z-index:1;
     top: 0;
@@ -25,7 +25,7 @@ text-decoration:none;
 .first a{
 color:#cccccc;
 font-size:18px;
-font-family:"Times New Roman", Times, serif;
+font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 }
 div.first{
 margin-top:2%;
@@ -39,7 +39,7 @@ div.first * {
     display: inline;
 }
 header div{
-    margin: 20px;
+    margin: 10px;
 }
 
 html{
@@ -50,7 +50,7 @@ color:#D68910;
 height:70px;
 font-size:17px;
 float:left;
-background: #0d0d0d;
+background: #1a1a1a;
 border:none;
 outline:none;
 }
@@ -59,4 +59,84 @@ outline:none;
     background-color:#4d4d4d;
     color:white;
 }
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+ .first ul li:hover > ul,
+ .first ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
 
+.first ul li ul li {
+  clear: both;
+  width: 100%;
+}
+.second{
+width:25%;
+z-index:1;
+}
+.searchBox{
+margin-top:-35px;
+float:right;
+border:1px solid orange;
+height: 45px;
+border-radius: 40px;
+transform:  translate(0%,50%);
+z-index:1;
+background:black;
+}
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+    z-index:1;
+}
+.searchBox:hover > .searchButton {
+  background: #D68910;
+  color : #2f3640;
+}
+
+.searchButton {
+    outline:none;
+    color: #2f3640;
+    float: right;
+    width: 55px;
+    height: 45px;
+    border-radius: 30%;
+    background: #D68910;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size:15px;
+    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    border:radius:5px;
+    z-index:1;
+    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}

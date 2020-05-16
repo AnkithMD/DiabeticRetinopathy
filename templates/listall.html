@@ -2,11 +2,27 @@
 {% block header %}
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/listall.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $( document ).ready(function() {
+  $( '.but1' ).click(function() {
+    $( '.but1' ).css('background', 'green');
+    $( ".but2" ).css('background', 'white');
+  });
+});
+
+    $( document ).ready(function() {
+  $( ".but2" ).click(function() {
+    $( ".but2" ).css('background', 'green');
+    $( '.but1' ).css('background', 'white');
+  });
+});
+</script>
 {% endblock header %}
 {% block body %}
-<table class="but">
-    <tr><td><a href="/list/c"><button>Completed</button></a></td><td><a href="/list/p"><button>Pending</button></a></td></tr>
-</table>
+<div class="but">
+    <a href="/list/c"><button class="but1">Completed</button></a><a href="/list/p"><button class="but2">Pending</button></a>
+</div>
 {% if all|length > 0 %}
     <table class="lis" border="1">
         <tr><th>NAME</th><th>AGE</th><th>GENDER</th><th>PH.NO</th><th>BLOOD GROUP</th><th>ACTION</th></tr>
@@ -22,6 +38,5 @@
         {% endfor %}
     </table>
 {% else %}
-<p class="np">No patient records to list</p>
 {% endif %}
 {% endblock body %}
