@@ -64,7 +64,7 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall-d
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 border:none;
 outline:none;
-font-family: accentu;
+font-family: accent;
 }
 
 .first button:hover{
@@ -92,8 +92,9 @@ ul li ul {
   width: 100%;
 }
 .second{
-margin-left:280px;
+margin-left:300px;
 z-index:1;
+
 }
 .searchBox{
 margin-top:10px;
@@ -104,16 +105,12 @@ transform:  translate(-100%,0%);
 z-index:1;
 background:black;
 }
-.searchBox:hover > .searchInput {
+.searchInput {
     width: 240px;
     padding: 0 6px;
     z-index:1;
 }
-.searchBox:active > .searchInput {
-    width: 240px;
-    padding: 0 6px;
-    z-index:1;
-}
+
 .searchBox:hover > .searchButton {
   background: #D68910;
   color : #2f3640;
@@ -144,7 +141,7 @@ background:black;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
-    width: 0px;
+    width: 240px;
     border:radius:5px;
     z-index:1;
     font-family: accentu;
