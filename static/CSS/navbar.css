@@ -1,9 +1,16 @@
-
+@font-face {
+  font-family: accent;
+  src: url(Baron.otf);
+}
+@font-face {
+  font-family: accentu;
+  src: url(ONEDAY.otf);
+}
 p.na{
 font-size:25px;
 color:#D68910;
 font-weight:bold;
-font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+font-family: accent;
 }
 
 header {
@@ -57,6 +64,7 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall-d
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 border:none;
 outline:none;
+font-family: accentu;
 }
 
 .first button:hover{
@@ -84,15 +92,15 @@ ul li ul {
   width: 100%;
 }
 .second{
-margin-left:-40px;
+margin-left:280px;
 z-index:1;
 }
 .searchBox{
-margin-top:-75px;
+margin-top:10px;
 border:1px solid orange;
 height: 50px;
 border-radius: 50px;
-transform:  translate(0%,100%);
+transform:  translate(-100%,0%);
 z-index:1;
 background:black;
 }
@@ -139,7 +147,7 @@ background:black;
     width: 0px;
     border:radius:5px;
     z-index:1;
-    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+    font-family: accentu;
 }
 
 @media screen and (max-width: 620px) {
@@ -166,6 +174,7 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall-d
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 border:none;
 outline:none;
+font-family: accentu;
 }
 
 .third button:hover{

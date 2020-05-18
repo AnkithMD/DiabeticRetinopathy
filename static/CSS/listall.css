@@ -70,11 +70,10 @@ display:inline;
 }
 
 .but button{
-margin-top:4px;
+margin-top:6px;
 margin-bottom:30px;
-padding: 15px;
 width:50%;
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -83,5 +82,5 @@ width:50%;
   border: none;
   border-radius: 15px;
   box-shadow: 0 3px #999;
-  height:5%;
+  height:60%;
 }

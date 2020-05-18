@@ -1,9 +1,12 @@
+@font-face {
+  font-family: accentu;
+  src: url(ONEDAY.otf);
+}
 body{
 Margin-top:120px;
 Margin-left:25%;
-background-color: #eae8ed;
-background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: white;
+
 width:50%;
 height:inherit;
 border: 1px solid #D68910;
@@ -12,10 +15,8 @@ box-shadow:1px 5px 30px 5px black;
 }
 
 div.form1{
-border:1px solid grey;
-background-color: #eae8ed;
-background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+border:none;
+background-color: white;
 margin-left:10%;
 }
 div.form1 input[type=text], div.form1 input[type=number], div.form1 select{
@@ -23,27 +24,28 @@ width:150%;
 position: relative;
 border:none;
 color:#2E4053;
-background-color: #eae8ed;
-background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: white;
+/*background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+ This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 border:1px solid #D68910;
 border-radius:5px;
 margin-left:-86%;
 margin-top:28%;
 outline:none;
 height:50px;
+
 }
 
 .tit{
 margin-top:5%;
 padding:10px;
 height:30px;
-background-color: #D68910;
+background-color: #993d00;
 text-align: center;
 color:black;
 font-size:20px;
 font-weight:bold;
-font-family:"Times New Roman", Times, serif;
+font-family:accentu;
 }
 
 html{
@@ -61,7 +63,7 @@ div.form1 input[type=submit]{
   margin-top:5%;
   margin-left:1%;
   margin-bottom:10%;
-  width:25%;
+  width:75%;
   font-size: 20px;
   font-weight:bold;
   font-family:"Times New Roman", Times, serif;
