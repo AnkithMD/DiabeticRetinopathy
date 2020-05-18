@@ -4,6 +4,19 @@
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/listall.css' %}">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
+function button_color()
+{
+    if({{type}}==1)
+    {
+        document.getElementById('but_pen').style.background = 'white';
+        document.getElementById('but_com').style.background = 'green';
+    }
+    if({{type}}==2)
+    {
+        document.getElementById('but_com').style.background = 'white';
+        document.getElementById('but_pen').style.background = 'green';
+    }
+}
     $( document ).ready(function() {
   $( '.but1' ).click(function() {
     $( '.but1' ).css('background', 'green');
@@ -21,8 +34,12 @@
 {% endblock header %}
 {% block body %}
 <div class="but">
-    <a href="/list/c"><button class="but1">Completed</button></a><a href="/list/p"><button class="but2">Pending</button></a>
+    <a href="/list/c"><button class="but1" id="but-com">Completed</button></a><a href="/list/p"><button class="but2" id="but_pen">Pending</button></a>
 </div>
+<script>
+button_color()
+</script>
+
 {% if all|length > 0 %}
     <table class="lis" border="1">
         <tr><th>NAME</th><th>AGE</th><th>GENDER</th><th>PH.NO</th><th>BLOOD GROUP</th><th>ACTION</th></tr>

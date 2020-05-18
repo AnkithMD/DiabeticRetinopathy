@@ -1,0 +1,68 @@
+
+body{
+margin-left:10%;
+width:80%;
+margin-top:5%;
+height:inherit;
+}
+.ret{
+width:100%;
+height:400px;
+
+}
+.ret th{
+height:10%;
+background:#1a1a1a;
+color:#D68910;
+}
+.ret th, .ret td{
+border:1px solid black;
+}
+.ret button{
+font-weight:bold;
+position:fixed;
+padding: 15px 25px;
+width:10%;
+font-size: 15px;
+text-align: center;
+cursor: pointer;
+outline: none;
+background:#1a1a1a;
+color:#D68910;
+border: none;
+border-radius: 5px;
+box-shadow: 0 3px #999;
+}
+
+html{
+background:#e6f2ff;
+}
+
+@keyframes go-left-right {        /* give it a name: "go-left-right" */
+    from { left: 0px; }             /* animate from left: 0px */
+    to { left: calc(100% - 20px); } /* animate to left: 100%-50px */
+  }
+
+  .progress {
+    animation: go-left-right 1s infinite alternate;
+    /* apply the animation "go-left-right" to the element
+       duration 3 seconds
+       number of times: infinite
+       alternate direction every time
+    */
+
+    position: relative;
+    border: 2px solid grey;
+    width: 15px;
+    height: 8px;
+    background: white;
+    border-radius:5px;
+  }
+.box{
+margin-left:43%;
+margin-top:2%;
+width:10%;
+background:grey;
+border:1px solid grey;
+border-radius:5px;
+}

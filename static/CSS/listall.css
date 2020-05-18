@@ -51,6 +51,7 @@ background-color: #ccccff; /* Green */
     border: none;
     border-radius: 10px;
     box-shadow: 1px 3px #999;
+    outline:none;
 }
 .lis button:active{
 transform: translateY(4px);

@@ -32,14 +32,16 @@ margin:7px;
 padding:5px 9.5px;
 margin-left:10%;
 border:1px solid grey;
-background:#f1f1f1;
+background:#1a1a1a;
+color:#D68910;
 }
 
 .addr div{
 padding:5px;
 margin-left:10%;
 border:1px solid grey;
-background:#f1f1f1;
+background:#1a1a1a;
+color:#D68910;
 }
 
 .sub{
@@ -53,8 +55,8 @@ font-size: 15px;
 text-align: center;
 cursor: pointer;
 outline: none;
-color: black;
-background-color: #4d4d4d;
+background:#1a1a1a;
+color:#D68910;
 border: none;
 border-radius: 5px;
 box-shadow: 0 3px #999;

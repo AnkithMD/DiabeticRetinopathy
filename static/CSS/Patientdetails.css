@@ -127,6 +127,7 @@ margin-bottom:20px;
 padding: 15px 25px;
 width:40%;
 z-index:1;
+outline:none;
   font-size: 16px;
   font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", sans-serif;
   text-align: center;

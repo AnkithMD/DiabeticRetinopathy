@@ -3,23 +3,24 @@
 {% block title %}
 	Predict
 {% endblock title %}
-
+{%load static%}
 {%block header%}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/predict.css' %}">
 
 {% endblock header %}
 
 {% block body %}
 <form action="/predict/{{id}}" method="POST">
 	{% csrf_token %}
-	<center><table>
+	<center><table class="ret">
 			<tr>
 				<th>Left Retina Photo</th>
 				<th>Right Retina Photo</th>
 			</tr>
 
 			<tr>
-				<td><img src="{{data.left_retina_photo.url}}" height="250" width="250"></td>
-				<td><img src ="{{data.right_retina_photo.url}}" height="250" width="250"></td>
+				<td><img src="{{data.left_retina_photo.url}}" height="100%" width="100%"></td>
+				<td><img src ="{{data.right_retina_photo.url}}" height="100%" width="100%"></td>
 			</tr>
 
 			{% if no_result %}
@@ -42,4 +43,30 @@
 
 	</table></center>
 </form>
+<!--<div class="load">
+<span>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>>
+  <div class="stick"></div>
+  <div class="stick"></div>
+  <div class="stick"></div>
+	<div class="stick"></div>
+	<div class="stick"></div><div class="stick"></div>
+	<div class="stick"></div>
+	<div class="stick"></div>
+	<div class="stick"></div>
+	<div class="stick"></div>
+	<div class="stick"></div>
+	<div class="stick"></div>
+	<div class="stick"></div>
+</span></div>-->
+<div class="box">
+	<div class="progress"></div></div>
 {% endblock body %}

@@ -3,31 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/navbar.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-{% block header%}
-<script type="text/javascript">
-		function validate(event)
-		{
-			s_val = document.getElementById('search').value
-			console.log(s_val.length)
-			if(s_val.match(/^[0-9]+$/))
-			{
-				if (s_val.length!=10){
-					alert("Please enter 10 number")
-					event.preventDefault()
-				}
-			}
-			else if (s_val.match(/^[0-9a-zA-Z]+$/))
-			{
-				if(!s_val.match(/^[a-z]+$/i))
-				{
-					alert("please enter phone number or patient name. Alphanumerics not allowed")
-  					event.preventDefault()
-				}
-
-			}
-		}
-	</script>
-{% endblock header%}
 <header>
     <div class="h">
         <p class="na">Diabetic Retinopathy</p></div>
@@ -41,22 +16,13 @@
                 {% else %}
                     WELCOME Guest
                 {% endif %}</button></a></li>
-             <li><a href="/logout"><button>LOGOUT</button></a></li>-->
+             <li><a href="/logout"><button>LOGOUT</button></a></li>
 
-</ul></div>
-<div class="second">
-    <div class="searchBox">
-
-<!--            <input class="searchInput" type="text" name="" placeholder="Enter Patient ID or Contact">-->
-<!--            <button class="searchButton" href="#">-->
-<!--                <i class="fa fa-search"></i>-->
-<!--            </button>-->
-        <form action="/search" method="POST" >
-	        {% csrf_token %}
-	        <input class="searchInput" id="search" type="text" name="parameter" placeholder="Search by patient phone number or Name" required>
-            <button class="searchButton" value="Search" onclick="validate(event)"><i class="fa fa-search"></i></button>
-	    </form>
-    </div>
+</ul>--></ul></div>
+<div id="wrap">
+  <form action="" autocomplete="on">
+  <input id="search" name="search" type="text" placeholder="Patient ID or Contact number"><input id="search_submit" value="Rechercher" type="submit">
+  </form>
 </div>
     <div class="third">
         <ul>
