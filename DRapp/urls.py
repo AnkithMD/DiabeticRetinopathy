@@ -14,6 +14,8 @@ urlpatterns = [
     path('addDR/<int:id>', views.dr),
     path('predict/<int:id>', views.preprocess),
     path('delete/<int:id>', views.delete),
+    path('edit/<int:id>', views.edit_patient),
+    path('update', views.update),
     path('print_pdf/<int:id>', views.print),
     path('login', views.loggingin),
     path('logout', views.user_logout)

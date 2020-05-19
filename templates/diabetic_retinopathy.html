@@ -28,7 +28,7 @@
 
 {% block body %}
 
-<h4 class="pid">Patient_id: {{id}}</h4>
+<h4 class="pid">Patient id: {{id}}</h4>
 <form action="/addDR/{{id}}" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
 <div class="adddr">

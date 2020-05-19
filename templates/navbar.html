@@ -4,6 +4,29 @@
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/navbar.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
+    <script type="text/javascript">
+		function validate(event)
+		{
+			s_val = document.getElementById('search').value
+			console.log(s_val.length)
+			if(s_val.match(/^[0-9]+$/))
+			{
+				if (s_val.length!=10){
+					alert("Please enter 10 number")
+					event.preventDefault()
+				}
+			}
+			else if (s_val.match(/^[0-9a-zA-Z]+$/))
+			{
+				if(!s_val.match(/^[a-z]+$/i))
+				{
+					alert("please enter phone number or patient name. Alphanumerics not allowed")
+  					event.preventDefault()
+				}
+
+			}
+		}
+	</script>
     <div class="h">
         <p class="na">Diabetic Retinopathy</p></div>
         <div class="first">
@@ -20,8 +43,9 @@
 
 </ul>--></ul></div>
 <div id="wrap">
-  <form action="" autocomplete="on">
-  <input id="search" name="search" type="text" placeholder="Patient ID or Contact number"><input id="search_submit" value="Rechercher" type="submit">
+  <form action="/search" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+  <input id="search" name="parameter" type="text" placeholder="Patient Name or Contact number"><input id="search_submit" value="Rechercher" type="submit" onclick="validate(event)">
   </form>
 </div>
     <div class="third">

@@ -6,7 +6,15 @@
 {%load static%}
 {%block header%}
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/predict.css' %}">
-
+<script type="text/javascript">
+        function check(event)
+        {
+            predict_button = document.getElementById('predict')
+            loading_anime = document.getElementById('anime')
+            loading_anime.style.display = "block";
+            predict_button.style.display = "none";
+        }
+    </script>
 {% endblock header %}
 
 {% block body %}
@@ -25,7 +33,7 @@
 
 			{% if no_result %}
 			<tr>
-				<td colspan="2"><center><button>Predict</button></center></td>
+				<td colspan="2"><center><button id="predict" onclick="check(event)">Predict</button></center></td>
 			</tr>
 			{% endif %}
 			{% if result %}
@@ -67,6 +75,6 @@
 	<div class="stick"></div>
 	<div class="stick"></div>
 </span></div>-->
-<div class="box">
+<div class="box" id="anime" style="display:none">
 	<div class="progress"></div></div>
 {% endblock body %}

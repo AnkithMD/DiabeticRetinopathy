@@ -2,26 +2,26 @@
 body{
 margin-left:10%;
 width:80%;
-margin-top:5%;
+margin-top:10%;
 height:inherit;
 }
 .ret{
 width:100%;
 height:400px;
-
+margin-top:5%;
 }
 .ret th{
 height:10%;
 background:#1a1a1a;
 color:#D68910;
 }
-.ret th, .ret td{
+.ret th{
 border:1px solid black;
 }
 .ret button{
 font-weight:bold;
-position:fixed;
-padding: 15px 25px;
+position:relative;
+padding: 10px 20px;
 width:10%;
 font-size: 15px;
 text-align: center;
@@ -32,6 +32,11 @@ color:#D68910;
 border: none;
 border-radius: 5px;
 box-shadow: 0 3px #999;
+z-index:1;
+}
+
+.ret button:active > .box{
+margin-top:3%;
 }
 
 html{
@@ -59,9 +64,9 @@ background:#e6f2ff;
     border-radius:5px;
   }
 .box{
-margin-left:43%;
-margin-top:2%;
-width:10%;
+margin-left:46%;
+margin-top:-3%;
+width:7%;
 background:grey;
 border:1px solid grey;
 border-radius:5px;
